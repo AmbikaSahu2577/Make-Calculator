@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Calculator
+{
+	public static void main(String[] args) 
+	{
+		  int n1,n2,ch,cal;
+
+		  System.out.println("enter two number");
+          Scanner sc = new Scanner(System.in);
+          n1=sc.nextInt();
+          n2=sc.nextInt();
+          System.out.println("press 1 for addition");
+          System.out.println("press 2 for subtraction");
+          System.out.println("press 3 for divison");
+          System.out.println("press 4 for multiplication");
+          System.out.println("press 5 for modulous");
+          System.out.println("select operation");
+          ch=sc.nextInt();
+          //clearScreen();  
+          if (ch==1) 
+          {
+          	cal = n1+n2;
+          	System.out.println("addition is "+cal);
+          }
+
+          else if (ch==2) 
+          {
+             cal = n1-n2;
+          	System.out.println("subtraction is "+cal);	
+          }
+
+          else if (ch==3) 
+          {
+          	cal = n1/n2;
+          	System.out.println("divison is "+cal);	
+          }
+
+          else if (ch==4) 
+          {
+          	cal = n1*n2;
+          	System.out.println("multiplication is "+cal);
+          }
+
+          else
+          {
+            cal = n1%n2;
+          	System.out.println("modulous is "+cal);
+          }
+	}  
+}
